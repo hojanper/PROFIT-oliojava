@@ -9,7 +9,7 @@ public class HelloWord
 
         System.out.println("HELOUUU MAAILMA");
         
-        
+       
     }
 
 }
