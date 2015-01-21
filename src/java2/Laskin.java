@@ -30,7 +30,11 @@ public class Laskin {
 	 * @param taulu taulukko, jonka alkiot nollataan
 	 */
 	public void nollaaTaulu (int [] taulu) {
-
+	        int alkMaara = taulu.length;
+	        System.out.println("Alkioiden maara: " + alkMaara);
+	        for(int i=0; i < alkMaara; i++)
+	            taulu[i] = 0;
+	        
 	}
 	
 /**
