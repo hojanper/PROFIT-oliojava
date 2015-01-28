@@ -31,7 +31,14 @@ public class Henkilo {
   }
   
   public static void main (String [] args) {
-	  
+	Henkilo henk1 = new Henkilo("121280-0000");
+    Henkilo henk2 = new Henkilo("121280-0000");
+	henk1.setNimi("Harri");
+    henk2.setNimi("Niina");
+	System.out.println(henk1.getPuoliso());
+	
+	henk1.avioidu(henk2);
+	System.out.println("Minun nimi on: "+ henk1.getNimi() + " ja puolisoni nimi on: " + henk1.getPuoliso().getNimi());
   }
   
 }
