@@ -21,12 +21,12 @@ public class Lumiukko {
 	 */
 	public void piirraLumiukko(EasyWindow w,double x, double y,double isonPallonSade, double keskipallonSade, double pikkupallonSade) {
 
-	        //double keskiPallonY =  //ratkaise t‰h‰n keskiPallonY
-	        //double pikkuPallonY =  //ratkaise t‰h‰n pikkuPallonY
+	        double keskiPallonY = isonPallonSade + keskipallonSade + y; //ratkaise t‰h‰n keskiPallonY
+	        double pikkuPallonY = keskiPallonY + keskipallonSade + pikkupallonSade; //ratkaise t‰h‰n pikkuPallonY
 	        
 	        w.addCircle(x,y,isonPallonSade); //piirt‰‰ ison pallon
-	        //w.addCircle(x,keskiPallonY,keskipallonSade); //piirt‰‰ keskipallon
-	        //w.addCircle(x,pikkuPallonY,pikkupallonSade); //piirt‰‰ pikkupallon
+	        w.addCircle(x,keskiPallonY,keskipallonSade); //piirt‰‰ keskipallon
+	        w.addCircle(x,pikkuPallonY,pikkupallonSade); //piirt‰‰ pikkupallon
 	        
 	}
 	
