@@ -25,11 +25,13 @@ public class linjaAuto {
 
     public void poistaMatkustaja()
     {
-        if(paikkojaVapaana = paikkoja)
+        if(paikkojaVapaana == paikkoja)
             System.out.println("Kaikki paikat tyhjiä");
         else
+        {
             paikkojaVapaana = paikkojaVapaana - 1;
-            
+            System.out.println("Paikka vaputui");
+        }    
     }
 
     
