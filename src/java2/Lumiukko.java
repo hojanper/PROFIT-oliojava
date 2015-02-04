@@ -27,7 +27,8 @@ public class Lumiukko {
 	        w.addCircle(x,y,isonPallonSade); //piirt‰‰ ison pallon
 	        w.addCircle(x,keskiPallonY,keskipallonSade); //piirt‰‰ keskipallon
 	        w.addCircle(x,pikkuPallonY,pikkupallonSade); //piirt‰‰ pikkupallon
-	        
+	    
+	        w.addLine(x, keskiPallonY, x, pikkuPallonY);
 	}
 	
     public static void main(String[] args) {
@@ -35,6 +36,7 @@ public class Lumiukko {
         EasyWindow window = new EasyWindow();
         
         window.scale(0, 0, 1000, 1000);
+
         
         //Luodaan lumiukko-olio
         Lumiukko lumiukko = new Lumiukko ();
