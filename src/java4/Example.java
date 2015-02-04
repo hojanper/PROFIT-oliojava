@@ -30,10 +30,11 @@ public class Example {
 		System.out.println("\nPalkan muuttamisen jälkeen: ");
 		m1.changeSalary(e1, 10000);
 		System.out.println(e1.displayEmpInfo());
-		
+/*
 		Employee e2 = new Employee("Jaska", 60000);
 		Manager m2 = (Manager)e2;
 		System.out.println(m2.displayEmpInfo());
+*/
 	}
 
 }
